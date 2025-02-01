@@ -1,0 +1,152 @@
+* {
+    font-family: "Barriecito", serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    overflow: auto;
+    background-image: url("./images/bg1.jpg");
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo span {
+    font-size: 3em;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.main-1 {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    padding-top: 10vh;
+    background-image: url("./images/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.main-1 > span {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(236, 23, 23);
+}
+
+.main-1 > img {
+    width: 40%;
+}
+
+.main-2 {
+    background-color: black;
+    padding: 30px;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.main-2 > span {
+    font-size: 3em;
+    color: white;
+}
+
+.row {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.row img {
+    width: 50%;
+}
+
+.row span {
+    color: white;
+    margin-left: 20px;
+    font-size: 2em;
+}
+
+.main-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    padding: 30px;
+    padding-top: 10vh;
+}
+
+.main-3 > span:nth-child(1) {
+    font-size: 3em;
+}
+
+.ca {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+@media only screen and (max-device-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 5vh;
+    }
+}
