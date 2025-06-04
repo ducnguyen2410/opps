@@ -1,5 +1,5 @@
 * {
-    font-family: "Barriecito", serif;
+    font-family: "UnifrakturMaguntia", cursive;
     padding: 0;
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +8,22 @@
 body {
     width: 100%;
     overflow: auto;
-    background-image: url("./images/bg1.jpg");
+    background-image: url("./images/background.png");
+}
+
+.main-1 a {
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+    animation: bigger 1.5s infinite alternate-reverse;
+}
+
+@keyframes bigger {
+    from {
+        font-size: 3em;
+    } to {
+        font-size: 4em;
+    }
 }
 
 .header {
@@ -75,7 +90,6 @@ body {
 }
 
 .main-2 {
-    background-color: black;
     padding: 30px;
     padding-top: 10vh;
     display: flex;
@@ -86,7 +100,8 @@ body {
 
 .main-2 > span {
     font-size: 3em;
-    color: white;
+    color: rgb(161, 97, 97);
+    font-weight: 700;
 }
 
 .row {
@@ -102,7 +117,7 @@ body {
 }
 
 .row span {
-    color: white;
+    color: rgb(231, 231, 231);
     margin-left: 20px;
     font-size: 2em;
 }
@@ -118,6 +133,7 @@ body {
 
 .main-3 > span:nth-child(1) {
     font-size: 3em;
+    color: red;
 }
 
 .ca {
